@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <title>Registration</title>
+</head>
+<body>
+    <div class="header">
+        <div class="theme">
+           <label>Change Theme</label>
+                <label><input type="radio" class="chooseTheme" name="radio_1" onchange="changeTheme(1);"> PURPLE </label>
+                <label><input type="radio" class="chooseTheme" name="radio_1" onchange="changeTheme(2);"> PINK </label>
+                <label><input type="radio" class="chooseTheme" name="radio_1" onchange="changeTheme(3);"> NIGHT </label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="registration">
+            <h1>REGISTRATION FORM</h1>
+
+            <label> USERNAME </label>
+            <input type="text" id="login" required onchange="loginValidityChecks()">
+           
+            
+            <label> PASSWORD </label>
+            <input type="text" id="password" required onchange=" passwordValidityChecks()">
+            <h2>At least 8 characters long (and less than 100 characters).<br>
+                Contains at least 1 number!.<br>
+                Contains at least 1 lowercase letter.<br>
+                Contains at least 1 uppercase letter.<br>
+                Contains a special character (e.g. @ !).<br>
+            </h2>
+
+            <label> REPEAT PASSWORD </label>
+            <input type="text" id="password_repeat" required onchange="passwordRepeatValidityChecks()">
+
+            <label> E-MAIL </label>
+            <input type="text" id="email" required onchange="emailValidityChecks()">
+
+            <input type="submit" class="submit_button" value="LOG IN" onclick="sendReq()">
+        </div>      
+    </div>
+
+</body>
+
+</html>
