@@ -162,7 +162,7 @@ function sendReq(){
               body: JSON.stringify(data)
             });
             const content = await rawResponse.json();
-          
+            console.log(content);
             alert("Data sent successfully.");
           })();
     }
