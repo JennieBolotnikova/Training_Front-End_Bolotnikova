@@ -8,10 +8,12 @@
     <title>Home</title>
 </head>
 <body>
+    <!--header contains a thematic description of the website-->
     <header>
         <h1>Художники XIX века, вошедшие в историю искусства</h1>
     </header>
     <div id = "container">
+        <!-- menu contains links to pages home, table and about-->
         <div id="menu">
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -19,6 +21,7 @@
                 <li><a href="about.html">About</a></li>
               </ul>
         </div>
+        <!--this page contains extended information on the topic of the site-->
         <div id = "content">
             <p>
                 <ins>Направления в живописи 19 века достаточно тесно перекликаются с направлениями века предшествующего. В начале столетия ведущим направлением во многих странах был классицизм.</ins>
@@ -44,9 +47,14 @@
             </p>
         </div>
     </div>
-    
+    <!--footer contains the current date, information about the creator of the site and the version of the site-->
     <footer>
+        <p><script type="text/javascript">
+            var date = new Date();
+            document.write("Сurrent date: " + date.getDate() +"." + (date.getUTCMonth()+1) + "."+ date.getFullYear()+".");
+        </script></p>
         <p>© Bolotnikova E.V.</p>
+        <p>Version: 1.0 </p>
     </footer>
     
 </body>
