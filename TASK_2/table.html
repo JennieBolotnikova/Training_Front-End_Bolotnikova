@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Archive of Artists</title>
 </head>
-<body>
+<body vocab="http://schema.org/">
     <!--header contains a thematic description of the website-->
     <header role="banner">
         <!--site header hCard microformat-->
         <h1 class="fn org">Художники XIX века, вошедшие в историю искусства</h1>
     </header>
-     <!-- menu contains links to pages home, table and about-->
-     <nav id="menu">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="table.html">Archive of Artists</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+     <!--this page contains a table with data-->
     <main>
-        
+        <!-- menu contains links to pages home, table and about-->
+        <nav class="menu">
+            <ul>
+                <li><a rel="foaf:topic" class="Home" href="home.html">Home</a></li>
+                <li><a rel="foaf:topic" class="Table" href="table.html">Archive of Artists</a></li>
+                <li><a rel="foaf:topic" class="About" href="about.html">About</a></li>
+            </ul>
+        </nav>
         <div id = "content">
             <!--this page contains a table with data-->
             <form id="tabl">
@@ -71,13 +71,13 @@
                         </tr>
                         <tr>
                             <td><img src="img/dega1.jpg" itemprop="exampleOfWork"></td>
-                            <td><img src="img/dega2.jpg" itemprop="exampleOfWork"></td></td>
-                            <td><img src="img/dega3.jpg" itemprop="exampleOfWork"></td></td>
+                            <td><img src="img/dega2.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/dega3.jpg" itemprop="exampleOfWork"></td>
                         </tr>
                         <tr>
                             <td> <img src="img/dega4.jpg"itemprop="exampleOfWork"></td>
-                            <td><img src="img/dega5.jpg" itemprop="exampleOfWork"></td></td>
-                            <td><img src="img/dega6.jpg" itemprop="exampleOfWork"></td></td>
+                            <td><img src="img/dega5.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/dega6.jpg" itemprop="exampleOfWork"></td>
                         </tr>
                         <tr>
                             <td>
@@ -90,14 +90,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td> <img src="img/Aivazovsky1.jpg" itemprop="exampleOfWork"></td>
-                            <td><img src="img/Aivazovsky2.jpg" itemprop="exampleOfWork"></td></td>
-                            <td><img src="img/Aivazovsky3.jpg" itemprop="exampleOfWork"></td></td>
+                            <td><img src="img/Aivazovsky1.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/Aivazovsky2.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/Aivazovsky3.jpg" itemprop="exampleOfWork"></td>
                         </tr>
                         <tr>
                             <td> <img src="img/Aivazovsky4.jpg" itemprop="exampleOfWork"></td>
-                            <td><img src="img/Aivazovsky5.jpg" itemprop="exampleOfWork"></td></td>
-                            <td><img src="img/Aivazovsky6.jpg" itemprop="exampleOfWork"></td></td>
+                            <td><img src="img/Aivazovsky5.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/Aivazovsky6.jpg" itemprop="exampleOfWork"></td>
                         </tr>
                         <tr>
                             <td>
@@ -111,14 +111,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td> <img src="img/Levitan1.jpg" itemprop="exampleOfWork"></td>
-                            <td><img src="img/Levitan2.jpg" itemprop="exampleOfWork"></td></td>
-                            <td><img src="img/Levitan3.jpg" itemprop="exampleOfWork"></td></td>
+                            <td><img src="img/Levitan1.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/Levitan2.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/Levitan3.jpg" itemprop="exampleOfWork"></td>
                         </tr>
                         <tr>
-                            <td> <img src="img/Levitan4.jpg" itemprop="exampleOfWork"></td>
-                            <td><img src="img/Levitan5.jpg" itemprop="exampleOfWork"></td></td>
-                            <td><img src="img/Levitan6.jpg" itemprop="exampleOfWork"></td></td>
+                            <td><img src="img/Levitan4.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/Levitan5.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/Levitan6.jpg" itemprop="exampleOfWork"></td>
                         </tr>
                         <tr>
                             <td>
@@ -132,26 +132,31 @@
                             </td>
                         </tr>
                         <tr>
-                            <td> <img src="img/korovin1.jpg" itemprop="exampleOfWork"></td>
-                            <td><img src="img/korovin2.jpg" itemprop="exampleOfWork"></td></td>
-                            <td><img src="img/korovin3.jpg" itemprop="exampleOfWork"></td></td>
+                            <td><img src="img/korovin1.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/korovin2.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/korovin3.jpg" itemprop="exampleOfWork"></td>
                         </tr>
                         <tr>
-                            <td> <img src="img/korovin4.jpg" itemprop="exampleOfWork"></td>
-                            <td><img src="img/korovin5.jpg" itemprop="exampleOfWork"></td></td>
-                            <td><img src="img/korovin6.jpg" itemprop="exampleOfWork"></td></td>
+                            <td><img src="img/korovin4.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/korovin5.jpg" itemprop="exampleOfWork"></td>
+                            <td><img src="img/korovin6.jpg" itemprop="exampleOfWork"></td>
                         </tr>
                     </table>
                 </div>
             </form>
         </div>
     </main>
+    <!--footer contains the current date, information about the creator of the site and the version of the site-->
+    <!--RDFa-->
     <footer>
-        <p><script type="text/javascript">
+        <!--the block with the current date-->
+        <p><span property="dc:date"><script type="text/javascript">
             var date = new Date();
             document.write("Сurrent date: " + date.getDate() +"." + (date.getUTCMonth()+1) + "."+ date.getFullYear()+".");
-        </script></p>
-        <p>© Bolotnikova E.V.</p>
+        </script></span></p>
+        <!--the author of the site-->
+        <p>©<span property="dc:creator">Bolotnikova E.V.</span></p>
+        <!--website version-->
         <p>Version: 1.0 </p>
     </footer>
 </body>
