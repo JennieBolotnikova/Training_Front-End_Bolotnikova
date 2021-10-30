@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--dictionary for RDFa-->
 <html lang="en" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
 <head>
     <meta charset="UTF-8">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Archive of Artists</title>
 </head>
+<!--Schema.org Dictionary for microdata-->
 <body vocab="http://schema.org/">
     <!--header contains a thematic description of the website-->
-    <header role="banner">
-        <!--site header hCard microformat-->
-        <h1 class="fn org">Художники XIX века, вошедшие в историю искусства</h1>
+    <!--microdata-->
+    <header itemscope itemtype="https://schema.org/WebSite">
+        <h1 itemprop="abstract">Художники XIX века, вошедшие в историю искусства</h1>
     </header>
      <!--this page contains a table with data-->
     <main>

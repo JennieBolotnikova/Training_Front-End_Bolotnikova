@@ -138,10 +138,10 @@ img{
     color: #3f4d61e1; 
     text-shadow: #9baabfe1 0 0 2px; 
     margin: 0 50px 80px 50px;
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
     text-indent: 40px;
 }
-#mail{
+#mail, #tel{
     color: #3f4d61e1;; 
     font-size: 20px; 
     padding-left: 7px;
