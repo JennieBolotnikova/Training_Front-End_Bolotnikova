@@ -26,8 +26,14 @@
                 </ul>
             </nav>
        <!--this page contains extended information on the topic of the site-->
-        <main>           
-            
+        <main> 
+            <!--TASK 3, par 6: news panel-->          
+            <section>
+                <h2>
+                    Картина недели – Иван Константинович Айвазовский "Морской пейзаж".                   
+                </h2>               
+                <img src="img/news.jpg" id="img_for_news">
+            </section>
             <!--microdata-->
             <article id = "content" itemscope itemtype="https://schema.org/Article">
                 <div itemprop="articleBody">
@@ -59,15 +65,17 @@
     <!--footer contains the current date, information about the creator of the site and the version of the site-->
     <!--RDFa-->
     <footer>
+        <div id="footer_block">
         <!--the block with the current date-->
         <p><span property="dc:date"><script type="text/javascript">
             var date = new Date();
             document.write("Сurrent date: " + date.getDate() +"." + (date.getUTCMonth()+1) + "."+ date.getFullYear()+".");
         </script></span></p>
         <!--the author of the site-->
-        <p>©<span property="dc:creator">Bolotnikova E.V.</span></p>
+        <p>© <span property="dc:creator">Bolotnikova E.V.</span></p>
         <!--website version-->
         <p>Version: 1.0 </p>
+        </div>
     </footer>
 </body>
 </html>

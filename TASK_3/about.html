@@ -46,15 +46,18 @@
     <!--footer contains the current date, information about the creator of the site and the version of the site-->
     <!--RDFa-->
     <footer>
+        <div id="footer_block">
         <!--the block with the current date-->
         <p><span property="dc:date"><script type="text/javascript">
             var date = new Date();
             document.write("Сurrent date: " + date.getDate() +"." + (date.getUTCMonth()+1) + "."+ date.getFullYear()+".");
         </script></span></p>
         <!--the author of the site-->
-        <p>©<span property="dc:creator">Bolotnikova E.V.</span></p>
+        <p>© <span property="dc:creator">Bolotnikova E.V.</span></p>
         <!--website version-->
         <p>Version: 1.0 </p>
+        </div>
+
     </footer>
 </body>
 </html>

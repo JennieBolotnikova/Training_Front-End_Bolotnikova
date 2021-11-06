@@ -3,8 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/**TASK 3, par 7: placement of elements is styled with CSS Grid Layout*/
 body{
+    position: relative;
     width: 100%;
     height: 100%;
     display: grid;
@@ -32,14 +33,14 @@ h1{
 }
 
 main{
+    width: 1100px;
     grid-area: main;
     background-color:#FFFAFA;
-    width: 1100px;
     justify-self: start;
     margin: 7% 0 0 0;
 }
 
-/*TASK 3, par 5: position: sticky keeps the menu in one place*/
+/*TASK 3, par 4, 5: position: sticky keeps the menu in one place*/
 .menu{
     grid-area: nav;
     width: 240px;
@@ -81,7 +82,36 @@ a:hover{
     text-indent: 40px;
     text-align: justify;
 }
-
+/*TASK 3, par 6: news panel on home page using
+flexible layout of blocks*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 400px;
+    width: 740px;
+    background-color: #FFFAFA;
+    border: 4px solid #cce0fff0;
+    margin-left: 42px;
+    margin-bottom: 10px;
+    justify-self: start;
+    padding: 10px;
+}
+section h2{
+    display: flex;
+    justify-self: start;
+    color:#3f4d61e1;
+    font-size: 20px;
+    margin: 13px 20px 0 20px;
+    font-weight: normal;
+}
+section p{
+    margin-top: 10px;
+}
+#img_for_news{
+    width: 500px;
+    height: 350px;
+}
 #change_style{
     width: 850px;
     height: 60px;
@@ -89,17 +119,21 @@ a:hover{
     margin-bottom: 20px;
     align-items:center;
 }
-
-h2{
+/*TASK 3, par 3: for h2 the mode is float: left*/
+#change_style h2{
     color:#3f4d61e1;
     font-size: 20px;
-    margin: 0 20px 0 20px;
-}
+    margin: 13px 20px 0 20px;
+    float: left;
 
+}
+/*TASK 3, par 3: for  the mode is float: right*/
 #change_style label{
     margin: 2px 10px 1px 10px;
     color:#3f4d61e1;
     text-shadow: #9baabfe1 0 0 2px;
+    float: right;
+    margin: 13px 40px 0 0;
 }
 
 table {
@@ -142,12 +176,24 @@ img{
     padding-left: 7px;
     text-shadow: #2f3133e1 0 0 2px; 
 }
+/*TASK 3, par 4: relative positioning for footer*/
 footer{
     grid-area: footer;
     width: 100%;
-    padding-right: 15%;
     border-top: 1px solid #e6eafaf0;
-    background-color: #cce0fff0;
+    background-color: #cce0fff0; 
+    position: relative;;  
 }
+/*TASK 3, par 4: absolute positioning for #footer_block*/
+#footer_block{
+    text-align: right;
+    position: absolute;               
+    top: 50%;
+    left: 80%;
+    margin-right: -20%;
+    transform: translate(-50%, -50%)
+}
+
+
 
 
