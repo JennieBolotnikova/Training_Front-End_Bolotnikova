@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="less/style.css"> 
+    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
     <title>Home</title>
 </head>
 <!--Schema.org Dictionary for microdata-->
@@ -15,9 +17,10 @@
         <header itemscope itemtype="https://schema.org/WebSite">
             <h1 itemprop="abstract">Художники XIX века, вошедшие в историю искусства</h1>
         </header>
-        <!-- navigation contains links to pages home, table and about-->
+       <!--this page contains extended information on the topic of the site-->
+        <main>           
+            <!-- navigation contains links to pages home, table and about-->
             <!--RDFa-->
-            <!--TASK 3, par 5: position: sticky keeps the menu in one place-->
             <nav class="menu">
                 <ul>
                     <li><a rel="foaf:topic" class="Home" href="home.html">Home</a></li>
@@ -25,13 +28,6 @@
                     <li><a rel="foaf:topic" class="About" href="about.html">About</a></li>
                 </ul>
             </nav>
-       <!--this page contains extended information on the topic of the site-->
-        <main> 
-            <!--TASK 3, par 6: news panel-->          
-            <section>
-                <h2> Картина недели – Иван Константинович Айвазовский "Морской пейзаж".</h2>               
-                <img src="img/news_500.jpg" id="img_for_news" >
-            </section>
             <!--microdata-->
             <article id = "content" itemscope itemtype="https://schema.org/Article">
                 <div itemprop="articleBody">
@@ -63,17 +59,15 @@
     <!--footer contains the current date, information about the creator of the site and the version of the site-->
     <!--RDFa-->
     <footer>
-        <div id="footer_block">
         <!--the block with the current date-->
         <p><span property="dc:date"><script type="text/javascript">
             var date = new Date();
             document.write("Сurrent date: " + date.getDate() +"." + (date.getUTCMonth()+1) + "."+ date.getFullYear()+".");
         </script></span></p>
         <!--the author of the site-->
-        <p>© <span property="dc:creator">Bolotnikova E.V.</span></p>
+        <p>©<span property="dc:creator">Bolotnikova E.V.</span></p>
         <!--website version-->
         <p>Version: 1.0 </p>
-        </div>
     </footer>
 </body>
 </html>

@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
     <title>About</title>
 </head>
 <!-- hCard format-->
-<body class="vcard">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<body class="vcard">    
     <!--header contains a thematic description of the website-->
     <header>
         <!--site header -->
         <!--microformat hCard-->
         <h1 class="fn org">Художники XIX века, вошедшие в историю искусства</h1>
     </header> 
-    <!-- menu contains links to pages home, table and about-->
-        <!--TASK 3, par 5: position: sticky keeps the menu in one place-->
+    <!--main content-->
+    <!--this page contains information about the author of the site and there is a possibility of feedback-->
+    <main class="content" spellcheck="true">
+        <!-- menu contains links to pages home, table and about-->
         <nav class="menu">
             <ul>
                 <li><a rel="foaf:topic" class="Home" href="home.html">Home</a></li>
@@ -26,10 +29,6 @@
                 <li><a rel="foaf:topic" class="About" href="about.html">About</a></li>
             </ul>
         </nav>
-    <!--main content-->
-    <!--this page contains information about the author of the site and there is a possibility of feedback-->
-    <main class="content" spellcheck="true">
-        
         <!--microformat-->
         <!--an hCard format element for marking up contact information-->
         <div id = "about">
@@ -46,18 +45,15 @@
     <!--footer contains the current date, information about the creator of the site and the version of the site-->
     <!--RDFa-->
     <footer>
-        <div id="footer_block">
         <!--the block with the current date-->
         <p><span property="dc:date"><script type="text/javascript">
             var date = new Date();
             document.write("Сurrent date: " + date.getDate() +"." + (date.getUTCMonth()+1) + "."+ date.getFullYear()+".");
         </script></span></p>
         <!--the author of the site-->
-        <p>© <span property="dc:creator">Bolotnikova E.V.</span></p>
+        <p>©<span property="dc:creator">Bolotnikova E.V.</span></p>
         <!--website version-->
         <p>Version: 1.0 </p>
-        </div>
-
     </footer>
 </body>
 </html>
