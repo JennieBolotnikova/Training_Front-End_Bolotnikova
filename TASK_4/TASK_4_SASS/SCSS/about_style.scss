@@ -1,0 +1,15 @@
+@import "style.scss";
+
+#about{
+    background-color: $color-of-main-elements;
+    @include font(20px, $text-color, $text-shadow-color, 0, 0, 2px);
+    @include margine(0, 50px, 80px, 50px);
+    @include padding( 10px, 20px, 10px ,20px);
+    text-indent: 40px;
+
+    #mail, #tel{
+        font-size: 20px; 
+        padding-left: 7px; 
+        @include font(20px, $text-color, #2f3133e1, 0, 0, 2px);
+    }
+}

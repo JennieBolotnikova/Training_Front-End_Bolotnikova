@@ -1,0 +1,292 @@
+/*styles that will be applied to all elements of the site*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/**TASK 3, par 7: placement of elements is styled with CSS Grid Layout*/
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 150px 1fr 120px;
+    grid-template-areas:"header header"
+    "nav main"
+    "footer footer";
+    overflow-x: hidden;
+}
+/*TASK 3, par 8.*/
+@media screen and (min-width: 1300px) {
+    main{
+        max-width: 800px;
+    }
+    .menu{
+        max-width: 240px;
+    }
+    section h2{
+        max-width: 200px;
+        font-size: 20px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    #img_for_news{
+        max-width: 500px;
+        max-height: 460px;
+    }
+    #artists_block{
+        max-width: 700px;
+    }
+    #change_style{
+        max-width: 800px;  
+        min-height: 100px;
+    }
+    #artists_block #for_table{
+        max-width: 250px;
+        max-height: 250px;
+    }
+  }
+/*TASK 3, par 8.*/
+@media screen and (max-width: 1000px) {
+    main{
+        max-width: 600px;
+    }
+    .menu{
+        max-width: 120px;
+    }
+    section h2{
+        max-width: 100px;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #img_for_news{
+        max-width: 330px;
+        max-height: 290px;
+    }
+    #artists_block{
+        max-width: 500px;
+    } 
+    #artists_block #for_table{
+        max-width: 150px;
+        max-height: 150px;
+    }  
+    #change_style{
+        max-width: 500px;
+        height:  100px;  
+    }
+}
+/*TASK 3, par 8.*/
+@media screen and (max-width: 700px) {
+    main{
+        max-width: 400px;
+    }
+    .menu{
+        max-width: 120px;
+    }
+    section h2{
+        max-width: 50px;
+        font-size: 10px;
+    }
+    h1{
+        font-size: 20px;
+        max-width: 300px;
+    }
+    #img_for_news{
+        max-width: 200px;
+        max-height: 160px;
+    }
+    #artists_block{
+        max-width: 400px;
+    }
+    #artists_block #for_table{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    #change_style{
+        max-width: 200px; 
+        height:  100px; 
+    }
+}
+header{
+    grid-area: header;
+    width: 100%;
+    border-bottom: 1px solid #e6eafaf0;
+    background-color: #cce0fff0;
+    
+}
+
+h1{
+    max-width: 700px;
+    margin: 2% 0 1% 15%;
+    color: #fffffff0;
+    text-shadow: #9baabfe1 0 0 4px;
+    align-self: end;
+    
+}
+
+main{
+    max-width: 800px;
+    grid-area: main;
+    background-color:#FFFAFA;
+    justify-self: start;
+    margin: 7% 0 0 0;
+}
+
+/*TASK 3, par 4, 5: position: sticky keeps the menu in one place*/
+.menu{
+    width: 240px;
+    grid-area: nav;
+    max-height: 200px;
+    border: 1px solid #e0edfff0;
+    background-color: #cce0fff0;
+    justify-self: end;
+    position: sticky;
+    top: 100px;
+    margin: 18% 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3f4d61e1; 
+    text-shadow: #9baabfe1 0 0 2px;
+    font-size: 20px; 
+    padding-left: 7px;
+}
+
+ul{
+
+    margin: 30px 0 0 0;
+}
+li{
+    margin: 0 0 32px 0;
+    list-style-type: none;
+}
+
+a:hover{
+    color: #fffffff0;
+}
+
+#content{
+    padding: 0 20px 20px 40px;
+    margin: 0 0 5% 0;
+    font-size: 18px;
+    text-indent: 40px;
+    text-align: justify;
+}
+/*TASK 3, par 6: news panel on home page using
+flexible layout of blocks*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-height: 600px;
+    background-color: #FFFAFA;
+    border: 4px solid #cce0fff0;
+    margin-left: 42px;
+    margin-bottom: 10px;
+    justify-self: start;
+    padding: 10px;
+}
+section h2{
+    display: flex; 
+    color:#3f4d61e1;
+    margin: 13px 20px 0 20px;
+    font-weight: normal;
+    max-width: 200px;
+    
+}
+#img_for_news{
+    width: 72%;
+    height: 68%;
+}
+#change_style{
+    max-width: 800px;  
+    min-height: 60px;
+    border: 5px solid #e0edfff0;
+    margin-bottom: 20px;
+    align-items:center;
+}
+/*TASK 3, par 3: for h2 the mode is float: left*/
+#change_style h2{
+    color:#3f4d61e1;
+    font-size: 20px;
+    margin: 2% 2% 0 2%;
+    float: left;
+
+}
+/*TASK 3, par 3: for  the mode is float: left*/
+#change_style label{
+    color:#3f4d61e1;
+    text-shadow: #9baabfe1 0 0 2px;
+    float: left;
+    margin: 2% 3% 0 0;
+}
+#artists_block{
+    max-width: 800px;
+}
+table {
+	margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+}
+tr {
+    border: 1px solid black;
+    
+}
+td {
+    border: 4px solid #cce0fff0;
+    border-radius: 20px;
+    max-width: 600px;
+
+}
+#info{
+    color: black;
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+
+}
+#for_table{
+    max-width: 200px;
+    max-height: 200px;
+    margin: 10px;
+}
+
+#about{
+    background-color: #cce0fff0;
+    font-size: 20px;
+    color: #3f4d61e1; 
+    text-shadow: #9baabfe1 0 0 2px; 
+    margin: 0 50px 80px 50px;
+    padding: 10px 20px 10px 20px;
+    text-indent: 40px;
+}
+#mail, #tel{
+    color: #3f4d61e1;; 
+    font-size: 20px; 
+    padding-left: 7px;
+    text-shadow: #2f3133e1 0 0 2px; 
+}
+/*TASK 3, par 4: relative positioning for footer*/
+footer{
+    grid-area: footer;
+    width: 100%;
+    border-top: 1px solid #e6eafaf0;
+    background-color: #cce0fff0; 
+    position: relative;;  
+}
+/*TASK 3, par 4: absolute positioning for #footer_block*/
+#footer_block{
+    text-align: right;
+    position: absolute;               
+    top: 50%;
+    left: 80%;
+    margin-right: -20%;
+    transform: translate(-50%, -50%)
+}
+
+
+
+

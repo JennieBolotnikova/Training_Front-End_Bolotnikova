@@ -1,0 +1,227 @@
+/*TASK 3, par 8.*/
+@media screen and (min-width: 1300px) {
+  main {
+    max-width: 800px;
+  }
+  .menu {
+    max-width: 240px;
+  }
+  section h2 {
+    max-width: 200px;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  #img_for_news {
+    max-width: 500px;
+    max-height: 460px;
+  }
+  #artists_block {
+    max-width: 700px;
+  }
+  #change_style {
+    max-width: 800px;
+    min-height: 100px;
+  }
+  #artists_block #for_table {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+/*TASK 3, par 8.*/
+@media screen and (max-width: 1000px) {
+  main {
+    max-width: 600px;
+  }
+  .menu {
+    max-width: 120px;
+  }
+  section h2 {
+    max-width: 100px;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  #img_for_news {
+    max-width: 330px;
+    max-height: 290px;
+  }
+  #artists_block {
+    max-width: 500px;
+  }
+  #artists_block #for_table {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  #change_style {
+    max-width: 500px;
+    height: 100px;
+  }
+}
+
+/*TASK 3, par 8.*/
+@media screen and (max-width: 700px) {
+  main {
+    max-width: 400px;
+  }
+  .menu {
+    max-width: 120px;
+  }
+  section h2 {
+    max-width: 50px;
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 20px;
+    max-width: 300px;
+  }
+  #img_for_news {
+    max-width: 200px;
+    max-height: 160px;
+  }
+  #artists_block {
+    max-width: 400px;
+  }
+  #artists_block #for_table {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #change_style {
+    max-width: 200px;
+    height: 100px;
+  }
+}
+
+/*Task 4 par. 8: using variables*/
+/*Task 4 par. 8: using mixins*/
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: 150px 1fr 120px;
+      grid-template-rows: 150px 1fr 120px;
+      grid-template-areas: "header header" "nav main" "footer footer";
+  overflow-x: hidden;
+}
+
+body header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  width: 100%;
+  border-bottom: 1px solid #e0edfff0;
+  background-color: #cce0fff0;
+}
+
+body header h1 {
+  max-width: 700px;
+  margin: 2% 0 1% 15%;
+  font-size: 35px;
+  color: #ffffff;
+  text-shadow: #9baabf 0 0 4px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+body nav {
+  width: 240px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  max-height: 200px;
+  border: 1px solid #e0edfff0;
+  background-color: #cce0fff0;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  margin: 19% 0 0 0;
+}
+
+body nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #3f4d61e1;
+  text-shadow: #9baabf 0 0 2px;
+  padding-left: 7px;
+}
+
+body nav:hover {
+  color: #fffffff0;
+}
+
+body nav ul {
+  margin: 30px 0 0 0;
+}
+
+body nav li {
+  margin: 0 0 32px 0;
+  list-style-type: none;
+}
+
+body main {
+  max-width: 800px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: main;
+  background-color: #FFFAFA;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin: 7% 0 0 0;
+}
+
+body footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  width: 100%;
+  border-top: 1px solid #e0edfff0;
+  background-color: #cce0fff0;
+  position: relative;
+}
+
+body footer #footer_block {
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  margin-right: -20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#about {
+  background-color: #cce0fff0;
+  font-size: 20px;
+  color: #3f4d61e1;
+  text-shadow: #9baabfe1 0 0 2px;
+  margin: 0 50px 80px 50px;
+  padding: 10px 20px 10px 20px;
+  text-indent: 40px;
+}
+
+#about #mail, #about #tel {
+  font-size: 20px;
+  padding-left: 7px;
+  font-size: 20px;
+  color: #3f4d61e1;
+  text-shadow: #2f3133e1 0 0 2px;
+}
+/*# sourceMappingURL=about_style.css.map */

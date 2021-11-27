@@ -1,0 +1,108 @@
+@import "adaptability.scss";
+
+/*Task 4 par. 8: using variables*/
+$primary-color: #FFFAFA;
+$color-of-main-elements: #cce0fff0;
+$text-shadow-color: #9baabfe1;
+$text-color: #3f4d61e1;
+$border-color: #e0edfff0 ;
+
+/*Task 4 par. 8: using mixins*/
+@mixin margine ($t, $r, $b, $l){
+    margin: $t $r $b $l;
+}
+
+@mixin padding ($t, $r, $b, $l){
+    padding: $t $r $b $l;
+}
+
+@mixin font($s, $c, $ts, $p1, $p2, $p3) {
+    font-size: $s;
+    color: $c;
+    text-shadow: $ts $p1 $p2 $p3;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 150px 1fr 120px;
+    grid-template-areas:"header header"
+    "nav main"
+    "footer footer";
+    overflow-x: hidden;
+
+    header{
+        grid-area: header;
+        width: 100%;
+        border-bottom: 1px solid $border-color;
+        background-color: $color-of-main-elements;
+
+        h1{
+            max-width: 700px;
+            @include margine(2%, 0, 1%, 15%);
+            @include font(35px, #ffffff, #9baabf, 0, 0 ,4px);
+            align-self: end;
+        }
+    }
+
+    nav{
+        width: 240px;
+        grid-area: nav;
+        max-height: 200px;
+        border: 1px solid $border-color;
+        background-color: $color-of-main-elements;
+        justify-self: end;
+        position: sticky;
+        top: 100px;
+        @include margine(19%, 0, 0, 0);
+
+        a{
+            text-decoration: none; 
+            @include font(20px, $text-color, #9baabf, 0, 0 ,2px);
+            padding-left: 7px;
+        }
+        &:hover{
+            color: #fffffff0;
+        }
+
+        ul{
+            @include margine(30px, 0, 0, 0);
+        }
+        li{
+            @include margine(0, 0, 32px, 0);
+            list-style-type: none;
+        }
+    }
+
+    main{
+        max-width: 800px;
+        grid-area: main;
+        background-color:$primary-color;
+        justify-self: start;
+        @include margine(7%, 0, 0, 0);
+    }
+    footer{
+        grid-area: footer;
+        width: 100%;
+        border-top: 1px solid $border-color;
+        background-color: $color-of-main-elements; 
+        position: relative;
+
+        #footer_block{
+            text-align: right;
+            position: absolute;               
+            top: 50%;
+            left: 80%;
+            margin-right: -20%;
+            transform: translate(-50%, -50%)
+        }
+    }
+}
+

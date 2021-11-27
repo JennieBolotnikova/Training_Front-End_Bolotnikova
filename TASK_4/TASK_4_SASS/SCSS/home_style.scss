@@ -1,0 +1,36 @@
+@import "adaptability.scss";
+@import "style.scss";
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-height: 600px;
+    background-color: $primary-color;
+    border: 4px solid $color-of-main-elements;
+    margin-left: 42px;
+    margin-bottom: 10px;
+    justify-self: start;
+    padding: 10px;
+
+    h2{
+        display: flex; 
+        color:$text-color;
+        @include margine(13px, 20px, 0, 20px);
+        font-weight: normal;
+        max-width: 200px;       
+    }
+
+    #img_for_news{
+        width: 72%;
+        height: 68%;
+    }
+}
+#content{
+    @include margine(0, 0, 5%, 0);
+    @include padding(0, 20px, 20px, 40px);
+    font-size: 18px;
+    text-indent: 40px;
+    text-align: justify;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--dictionary for RDFa-->
+<html lang="en" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about_style.css">
+    <title>About</title>
+</head>
+<!-- hCard format-->
+<body class="vcard">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!--header contains a thematic description of the website-->
+    <header>
+        <!--site header -->
+        <!--microformat hCard-->
+        <h1 class="fn org">Художники XIX века, вошедшие в историю искусства</h1>
+    </header> 
+    <!-- menu contains links to pages home, table and about-->
+        <!--TASK 3, par 5: position: sticky keeps the menu in one place-->
+        <nav class="menu">
+            <ul>
+                <li><a rel="foaf:topic" class="Home" href="home.html">Home</a></li>
+                <li><a rel="foaf:topic" class="Table" href="table.html">Archive of Artists</a></li>
+                <li><a rel="foaf:topic" class="About" href="about.html">About</a></li>
+            </ul>
+        </nav>
+    <!--main content-->
+    <!--this page contains information about the author of the site and there is a possibility of feedback-->
+    <main class="content" spellcheck="true">
+        
+        <!--microformat-->
+        <!--an hCard format element for marking up contact information-->
+        <div id = "about">
+            <p> Уважаемые посетители. Данный сайт является образовательным некоммерческим проектом, основной целью которого является приобщение пользователей Интернета к культурному наследию человечества в области живописи, художественное просвещение и образование, ознакомление с творчеством выдающихся художников.</p>
+            <p> Сайт был разработан студентокой 3 курса <span class="adr">Гомельского Государственного Технического Университета имени П.О. Сухого</span>  - <span class="fn">Болотниковой Евгенией Витальевной.</span></p>
+            <p> Ресурс дает возможность прикоснуться к шедеврам мировой живописи, являющимися достоянием всего человечества.</p>
+            <p>
+                Нам важно ваше мнение, которое позволит сделать сайт более интересным и информативным.
+                Просим высказывать свои пожелания и предложения, перейдя по ссылке <a class="email" href="mailto:bolotnikova.jenni@gmail.com" id = "mail"> Обратная связь</a> или по телефону <a class="tel" href="tel:+375447436663" id="tel">+375 (44) 7436663</a>.
+                <br> Мы будем рады любому отзыву.
+            </p>   
+        </div>
+    </main>
+    <!--footer contains the current date, information about the creator of the site and the version of the site-->
+    <!--RDFa-->
+    <footer>
+        <div id="footer_block">
+        <!--the block with the current date-->
+        <p><span property="dc:date"><script type="text/javascript">
+            var date = new Date();
+            document.write("Сurrent date: " + date.getDate() +"." + (date.getUTCMonth()+1) + "."+ date.getFullYear()+".");
+        </script></span></p>
+        <!--the author of the site-->
+        <p>© <span property="dc:creator">Bolotnikova E.V.</span></p>
+        <!--website version-->
+        <p>Version: 1.0 </p>
+        </div>
+
+    </footer>
+</body>
+</html>

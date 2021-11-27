@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--dictionary for RDFa-->
+<html lang="en" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Archive of Artists</title>
+</head>
+<!--Schema.org Dictionary for microdata-->
+<body vocab="http://schema.org/">
+    <!--header contains a thematic description of the website-->
+    <!--microdata-->
+    <header itemscope itemtype="https://schema.org/WebSite">
+        <h1 itemprop="abstract">Художники XIX века, вошедшие в историю искусства</h1>
+    </header>
+    <!-- menu contains links to pages home, table and about-->
+        <!--TASK 3, par 5: position: sticky keeps the menu in one place-->
+        <nav class="menu">
+            <ul>
+                <li><a rel="foaf:topic" class="Home" href="home.html">Home</a></li>
+                <li><a rel="foaf:topic" class="Table" href="table.html">Archive of Artists</a></li>
+                <li><a rel="foaf:topic" class="About" href="about.html">About</a></li>
+            </ul>
+        </nav>
+     <!--this page contains a table with data-->
+    <main>     
+        <div id = "content">
+            <!--this page contains a table with data-->
+            <form id="tabl">
+                <!--the method makes it possible to change the style of the table formatting-->
+                <div id = "change_style">
+                    <h2>Изменить стиль таблицы:</h2>
+                    <label><input type="radio" class="chooseStyle" name="radio" onchange="changeStyle(1);"> стиль 1 </label>
+                    <label><input type="radio" class="chooseStyle" name="radio" onchange="changeStyle(2);"> стиль 2 </label>
+                    <label><input type="radio" class="chooseStyle" name="radio" onchange="changeStyle(3);"> стиль 3 </label>
+                </div>
+                <!--microdata-->
+                <div itemscope itemtype="http://schema.org/Painting" id="artists_block">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/Mane.jpg" id="for_table">
+                            </td>
+                            <td colspan="2" id="info">
+                                <span itemprop="description">
+                                <span itemprop="author">Эдуар Мане</span> (фр. Édouard Manet ; 23 января 1832, Париж – 30 апреля 1883, Париж) – французский художник, вдохновитель и предводитель импрессионистической живописи, никогда не примыкавший к лагерю импрессионистов.
+                                Особенности творчества художника Эдуара Мане: родоначальник современного искусства, который первым начал писать жизнь своих современников, а не аллегорические, мифические и исторические сюжеты, которые принимались и продавались в то время на главной французской выставке – Салоне. Первый художник, над картинами которого хохотали и на картины которого плевали возмущенные «непристойностью» толпы зрителей. Мечтавший об официальной славе и салонной карьере, Мане тем не менее стал главным революционером во французской живописи XIX века.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/mane1.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/mane2.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/mane3.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/mane4.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/mane5.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/mane6.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/dega.jpg" id="for_table">
+                            </td>
+                            <td colspan="2" id="info">
+                                <span itemprop="description">
+                                <span itemprop="author">Эдгар Дега</span>, полное имя Илер-Жермен-Эдгар де Га (фр. Edgar Degas, 19 июля 1834, Париж — 27 сентября 1917) – французский художник-импрессионист, один из основателей движения, принимавший участие в 7 из 8 выставок импрессионистов.
+                                Особенности творчества художника Эдгара Дега: смещенные композиции, обрезанные краем полотна фигуры, неожиданные предметы, перерезающие и заслоняющие главных героев, как будто невзначай схваченные, репортажные моменты. 
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/dega1.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/dega2.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/dega3.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                        </tr>
+                        <tr>
+                            <td> <img src="img/dega4.jpg"itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/dega5.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/dega6.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Aivazovsky.jpg" id="for_table">
+                            </td>
+                            <td colspan="2" id="info">
+                                <span itemprop="description">
+                                <span itemprop="author">Иван Константинович Айвазовский</span> (арм. Ованнес Айвазян; 17 (29) июля 1817, Феодосия — 19 апреля (2 мая) 1900 год, Феодосия)– самый известный русский художник-маринист. Главные герои его картин – морские пейзажи. Айвазовский прошел путь от феодосийского мальчишки, рисующего на стенах домов, потому что ни карандашей, ни альбомов в доме не водилось, до одного из самых знаменитых и успешных мастеров своего времени. Признан он был как на территории Российской империи, так и за границей.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Aivazovsky1.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/Aivazovsky2.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/Aivazovsky3.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                        </tr>
+                        <tr>
+                            <td> <img src="img/Aivazovsky4.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/Aivazovsky5.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/Aivazovsky6.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Levitan.jpg" id="for_table">
+                            </td>
+                            <td colspan="2" id="info">
+                                <span itemprop="description">
+                                <span itemprop="author">Исаак Ильич Левитан</span> (3 (16) октября, по другим сведениям, 18 (30) августа 1860, посад Кибарты (ныне г. Кибартай, Литва) – 22 июля (4 августа) 1900, Москва) – мастер «пейзажа настроения», один из создателей национального русского пейзажа.
+                                Особенности творчества художника Исаака Левитана. Лирические пейзажи Левитана проникнуты, с одной стороны, субъективными человеческими переживаниями (природа «печалится», «хмурится», «умиротворена», «ликует» и т.п.), а с другой стороны – острым ощущением объективной высшей гармонии (отчего присутствие человека в пейзаже становится ненужным и даже излишним). Изображая с большим чувством и правдивостью всё милое и скромное, невзрачное и неброское, простое и великое в русской природе, Исаак Левитан, по словам Александра Бенуа, привнёс «в чёрствый реализм живительный дух поэзии».
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Levitan1.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/Levitan2.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/Levitan3.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Levitan4.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/Levitan5.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/Levitan6.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/korovin.jpg" id="for_table">
+                            </td>
+                            <td colspan="2" id="info">
+                                <span itemprop="description">
+                                <span itemprop="author">Константин Алексеевич Коровин</span> (23 ноября (5 декабря) 1861, Москва — 11 сентября 1939, Париж) - русский живописец и театральный художник, убежденный и последовательный импрессионист.
+                                Особенности творчества художника Константина Коровина: увлечение светом и цветом присутствует, но в сравнении с французскими импрессионистами Коровин сохраняет слишком большую приверженность предмету изображения, свет и цвет для него чаще всего – прием и способ писать предмет, но не единственный повод для создания картины; отсутствие мимолетности, свет не растворяет предмет; декоративность; этюдизм; применение темных цветов, в то числе табуированного импрессионистами черного.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/korovin1.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/korovin2.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/korovin3.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/korovin4.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/korovin5.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                            <td><img src="img/korovin6.jpg" itemprop="exampleOfWork" id="for_table"></td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!--footer contains the current date, information about the creator of the site and the version of the site-->
+    <!--RDFa-->
+    <footer>
+        <div id="footer_block">
+        <!--the block with the current date-->
+        <p><span property="dc:date"><script type="text/javascript">
+            var date = new Date();
+            document.write("Сurrent date: " + date.getDate() +"." + (date.getUTCMonth()+1) + "."+ date.getFullYear()+".");
+        </script></span></p>
+        <!--the author of the site-->
+        <p>© <span property="dc:creator">Bolotnikova E.V.</span></p>
+        <!--website version-->
+        <p>Version: 1.0 </p>
+        </div>
+    </footer>
+</body>
+</html>
