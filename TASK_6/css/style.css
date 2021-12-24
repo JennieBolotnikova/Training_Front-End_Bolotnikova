@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Nekst-Regular'; 
+    src: url(/fonts/Nekst-Regular.otf); 
+}
+body{
+    text-transform: uppercase;
+    color: rgb(243, 242, 240);
+    background-color: #7abb4f;
+    user-select: none;
+    font-family: 'Nekst-Regular'; 
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    margin-left: 44%;
+}
+#order{
+    width: 500px;
+    height: 400px;
+    margin-left: 200px;
+}
+#bases, #toppings, #souses{
+    border:rgb(243, 242, 240) 3px solid ;
+    padding: 20px;
+    width: 720px;
+    border-radius: 30px;
+}
+.topping_cb{
+    margin: 5px 5px 5px 0px;
+}
+.topping_label{
+    margin: 15px 10px 15px 0;
+}
