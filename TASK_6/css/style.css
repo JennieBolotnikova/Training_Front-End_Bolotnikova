@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Nekst-Regular'; 
-    src: url(/fonts/Nekst-Regular.otf); 
-}
+
 body{
     text-transform: uppercase;
     color: rgb(243, 242, 240);
