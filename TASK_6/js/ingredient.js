@@ -2,16 +2,28 @@ class Ingredient{
     name
     cost
     calories
+    /**
+     * @constructor
+     * @param {String} name - name of the ingredient
+     * @param {Number} cost - count of the ingredient
+     * @param {Number} calories -the number of calories of the ingredient
+     */
     constructor(name, cost, calories){
         this.name = name;
         this.cost = cost;
         this.calories = calories;
     }
-
+    /**
+     * @param {String} name - name of the selected ingredient
+     */
     get name(){return this.name}
-
+    /**
+     * @param {Number} cost - count of the selected ingredient
+     */
     get cost(){return this.cost}
-
+    /**
+     * @param {Number} calories -the number of calories of the selected ingredient
+     */
     get calories(){return this.calories}
 
     set name(value){

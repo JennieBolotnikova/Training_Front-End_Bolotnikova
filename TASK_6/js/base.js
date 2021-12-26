@@ -2,16 +2,28 @@ class Base{
     name
     cost
     calories
+    /**
+     * @constructor
+     * @param {String} name - name of the base
+     * @param {Number} cost - count of the base
+     * @param {Number} calories -the number of calories of the base
+     */
     constructor(name, cost, calories){
         this.name = name;
         this.cost = cost;
         this.calories = calories;
     }
-
+    /**
+     * @param {String} name - name of the selected base
+     */
     get name(){return this.name}
-
+    /**
+     *  @param {Number} cost - count of the selected base
+     */
     get cost(){return this.cost}
-
+    /**
+     * @param {Number} calories -the number of calories of the selected base
+     */
     get calories(){return this.calories}
     
     set name(value){

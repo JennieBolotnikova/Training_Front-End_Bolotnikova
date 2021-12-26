@@ -4,7 +4,10 @@ var sauses = [];
 var totalCoast;
 var totalCalories;
 var finalyCoast;
-
+var pizzaArray = [];
+/**
+ * a function that helps the user to collect the desired pizza
+ */
 window.onclick = function onclickFunction() {
     //Bases
     if(document.querySelector('#thin').checked == true)
@@ -42,6 +45,7 @@ window.onclick = function onclickFunction() {
         totalCalories = base.calories;
         console.log(base.name, totalCalories, totalCoast)
     }
+    
     //Ingredients
     if(document.querySelector('#mozzarella').checked)
     {
@@ -157,4 +161,58 @@ window.onclick = function onclickFunction() {
         console.log(sauce.name, sauce.calories, sauce.cost );
     }
     console.log(totalCalories, totalCoast)
+    // Price calculation including taxes (rounding to the nearest hundredth)
+    if(totalCoast <= 10){
+        finalyCoast = Math.round(totalCoast * 100 * 1.2) / 100;
+    }
+    else if( 20 < totalCoast <= 18){
+        finalyCoast = Math.round(totalCoast * 100 * 1.15) / 100;
+    }
+    else if(totalCoast > 26){
+        finalyCoast = Math.round(totalCoast * 100 * 1.1) / 100;
+    } 
+    console.log(totalCalories, finalyCoast)
+
+    // data output to HTML
+   
+    document.querySelector('#coastFinaly').innerHTML = finalyCoast + ' $';
+    document.querySelector('#coastCalories').innerHTML = totalCalories;
+
+   
+}
+/**
+ * generates a pizza order and sends data to the server in json format
+ */
+function makePizza(){
+    if(!base){
+        alert(`Please choose base`)
+    }
+    else if(!ingredients[0]){
+        alert(`Please select at least one topping`)
+    }
+    else if(!sauses[0]){
+        alert(`Please select at least one sauce`)
+    }
+    else{
+        pizzaArray.push(new Pizza(base, ingredients, souses));
+        (async () => {
+            const rawResponse = await fetch('https://jsonplaceholder.typicode.com/users', {
+              method: 'POST',
+              headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(pizzaArray)
+            }).then(result => result.json())
+            .then(result => {
+                alert('Your order is accepted')
+            })
+            .catch(error => {
+                console.log(`Error: ${error.message}`)
+                alert(`Error: ${error.message}`)
+            })
+          })();
+          
+    }
+    
 }

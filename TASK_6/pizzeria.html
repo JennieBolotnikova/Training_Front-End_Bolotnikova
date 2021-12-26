@@ -16,8 +16,15 @@
     <h1>Pizza</h1>   
     <div id="container">
         <div id="order">
-            <textarea></textarea>
-
+            <h2>SALES SLIP:</h2>
+            <div>
+            <!-- displaying the price of pizza with tax included -->
+            <h3>Total price : <output id="coastFinaly"></output></h3>
+            <!-- pizza calorie output -->
+            <h3>Calories : <output id="coastCalories"></output></h3>
+            
+            </div>
+            <button onclick="makePizza()" id="toOrder">TO ORDER</button>
         </div>
         <div id="pizza_maker">
             <h2>CHOOSE PIZZA BASES:</h2>
@@ -82,7 +89,7 @@
         
             </div>
             
-            <input type="button" id="order" href="#" value="To order">
+
         </div>
     </div>
 </body>

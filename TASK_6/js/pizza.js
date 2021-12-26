@@ -1,17 +1,29 @@
 class Pizza{
-
+    base
     ingredients = []
     souses = []
+    /**
+     * @constructor
+     * @param {Base} base - pizza base 
+     * @param {Ingredient} ingredients - toppings
+     * @param {Sauce} sauces - sauce
+     */
     constructor(base, ingredients, souses){
         this.base = base;
         this.ingredients = ingredients;
         this.souses = souses;
     }
-
+    /**
+     * @param {Base} - selected type of pizza base
+     */
     get base(){return this.base}
-
+    /**
+     * @param {Ingredient} - selected toppings
+     */
     get ingredients(){return this.ingredients}
-
+    /**
+     * @param {Sauce} - selected sauce
+     */
     get sauces(){return this.sauces}
 
     set base(value){
