@@ -13,34 +13,43 @@ class Ingredient{
         this.cost = cost;
         this.calories = calories;
     }
-    /**
+    /**Returns the name of a pizza ingredient
      * @param {String} name - name of the selected ingredient
      */
     get name(){return this.name}
-    /**
+    /**Returns the cost of a pizza ingredient
      * @param {Number} cost - count of the selected ingredient
      */
     get cost(){return this.cost}
-    /**
+    /**Returns the calories of a pizza ingredient
      * @param {Number} calories -the number of calories of the selected ingredient
      */
     get calories(){return this.calories}
 
+    /**Sets the value
+     * 
+     */
     set name(value){
         if (value === '' || value === undefined){
-            throw  new Error('Incorrect name base pizza')
+            throw  new Error('Incorrect ingredient name')
         }
         this.name = value
     }
+    /**Sets the value
+     * 
+     */
     set cost(value){
         if (value === '' || value === undefined){
-            throw new Error('Incorrect cost base pizza')
+            throw new Error('Incorrect ingredient cost ')
         }
         this.cost = value
     }
+    /**Sets the value
+     * 
+     */
     set calories(value){
         if (value === '' || value === undefined){
-            throw new Error('Incorrect calories base pizza')
+            throw new Error('Incorrect ingredient calories')
         }
         this.calories = value
     }

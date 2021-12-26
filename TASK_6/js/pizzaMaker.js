@@ -15,35 +15,35 @@ window.onclick = function onclickFunction() {
         base = new ThinBase();
         totalCoast = base.cost;
         totalCalories = base.calories;
-        console.log(base.name, totalCalories, totalCoast)
+        //console.log(base.name, totalCalories, totalCoast)
     }
     if(document.querySelector('#thick').checked == true)
     {
         base = new ThickBase();
         totalCoast = base.cost;
         totalCalories = base.calories;
-        console.log(base.name, totalCalories, totalCoast)
+        //console.log(base.name, totalCalories, totalCoast)
     }
     if(document.querySelector('#puff').checked == true)
     {
         base = new PuffBase();
         totalCoast = base.cost;
         totalCalories = base.calories;
-        console.log(base.name, totalCalories, totalCoast)
+        //console.log(base.name, totalCalories, totalCoast)
     }
     if(document.querySelector('#italian').checked == true)
     {
         base = new ItalianBase();
         totalCoast = base.cost;
         totalCalories = base.calories;
-        console.log(base.name, totalCalories, totalCoast)
+        //console.log(base.name, totalCalories, totalCoast)
     }
     if(document.querySelector('#calzone').checked == true)
     {
         base = new CalzoneBase();
         totalCoast = base.cost;
         totalCalories = base.calories;
-        console.log(base.name, totalCalories, totalCoast)
+        //console.log(base.name, totalCalories, totalCoast)
     }
     
     //Ingredients
@@ -53,7 +53,7 @@ window.onclick = function onclickFunction() {
         totalCoast += ingredient.cost;
         totalCalories += ingredient.calories; 
         ingredients.push(ingredient.name);  
-        console.log(ingredient.name, ingredient.calories, ingredient.cost)
+        //console.log(ingredient.name, ingredient.calories, ingredient.cost)
     }
     if(document.querySelector('#parmesan').checked)
     {
@@ -61,7 +61,7 @@ window.onclick = function onclickFunction() {
         totalCoast += ingredient.cost;
         totalCalories += ingredient.calories; 
         ingredients.push(ingredient.name);  
-        console.log(ingredient.name, ingredient.calories, ingredient.cost)
+        //console.log(ingredient.name, ingredient.calories, ingredient.cost)
     }
     if(document.querySelector('#peperoni').checked)
     {
@@ -69,7 +69,7 @@ window.onclick = function onclickFunction() {
         totalCoast += ingredient.cost;
         totalCalories += ingredient.calories; 
         ingredients.push(ingredient.name);  
-        console.log(ingredient.name, ingredient.calories, ingredient.cost)
+        //console.log(ingredient.name, ingredient.calories, ingredient.cost)
     }
     if(document.querySelector('#chicken').checked)
     {
@@ -77,7 +77,7 @@ window.onclick = function onclickFunction() {
         totalCoast += ingredient.cost;
         totalCalories += ingredient.calories; 
         ingredients.push(ingredient.name);  
-        console.log(ingredient.name, ingredient.calories, ingredient.cost)
+        //console.log(ingredient.name, ingredient.calories, ingredient.cost)
     }
     if(document.querySelector('#bacon').checked)
     {
@@ -85,7 +85,7 @@ window.onclick = function onclickFunction() {
         totalCoast += ingredient.cost;
         totalCalories += ingredient.calories; 
         ingredients.push(ingredient.name);  
-        console.log(ingredient.name, ingredient.calories, ingredient.cost)
+        //console.log(ingredient.name, ingredient.calories, ingredient.cost)
     }
     if(document.querySelector('#champignon').checked)
     {
@@ -93,7 +93,7 @@ window.onclick = function onclickFunction() {
         totalCoast += ingredient.cost;
         totalCalories += ingredient.calories; 
         ingredients.push(ingredient.name);  
-        console.log(ingredient.name, ingredient.calories, ingredient.cost)
+        //console.log(ingredient.name, ingredient.calories, ingredient.cost)
     }
     if(document.querySelector('#ham').checked)
     {
@@ -101,7 +101,7 @@ window.onclick = function onclickFunction() {
         totalCoast += ingredient.cost;
         totalCalories += ingredient.calories; 
         ingredients.push(ingredient.name);  
-        console.log(ingredient.name, ingredient.calories, ingredient.cost)
+        //console.log(ingredient.name, ingredient.calories, ingredient.cost)
     }
     if(document.querySelector('#tomatoes').checked)
     {
@@ -109,7 +109,7 @@ window.onclick = function onclickFunction() {
         totalCoast += ingredient.cost;
         totalCalories += ingredient.calories; 
         ingredients.push(ingredient.name);  
-        console.log(ingredient.name, ingredient.calories, ingredient.cost)
+        //console.log(ingredient.name, ingredient.calories, ingredient.cost)
     }
     if(document.querySelector('#pineapple').checked)
     {
@@ -117,7 +117,7 @@ window.onclick = function onclickFunction() {
         totalCoast += ingredient.cost;
         totalCalories += ingredient.calories; 
         ingredients.push(ingredient.name);  
-        console.log(ingredient.name, ingredient.calories, ingredient.cost)
+        //console.log(ingredient.name, ingredient.calories, ingredient.cost)
     }
     if(document.querySelector('#onion').checked)
     {
@@ -125,7 +125,7 @@ window.onclick = function onclickFunction() {
         totalCoast += ingredient.cost;
         totalCalories += ingredient.calories; 
         ingredients.push(ingredient.name);  
-        console.log(ingredient.name, ingredient.calories, ingredient.cost)
+        //console.log(ingredient.name, ingredient.calories, ingredient.cost)
     }
     //Sauses
     if(document.querySelector('#tomatoSauce').checked)
@@ -134,7 +134,7 @@ window.onclick = function onclickFunction() {
         totalCoast += sauce.cost;
         totalCalories += sauce.calories;
         sauses.push(sauce.name);
-        console.log(sauce.name, sauce.calories, sauce.cost );
+       //console.log(sauce.name, sauce.calories, sauce.cost );
     }
     if(document.querySelector('#bbq').checked)
     {
@@ -142,7 +142,7 @@ window.onclick = function onclickFunction() {
         totalCoast += sauce.cost;
         totalCalories += sauce.calories;
         sauses.push(sauce.name);
-        console.log(sauce.name, sauce.calories, sauce.cost );
+        //console.log(sauce.name, sauce.calories, sauce.cost );
     }
     if(document.querySelector('#cheeseSauce').checked)
     {
@@ -150,7 +150,7 @@ window.onclick = function onclickFunction() {
         totalCoast += sauce.cost;
         totalCalories += sauce.calories;
         sauses.push(sauce.name);
-        console.log(sauce.name, sauce.calories, sauce.cost );
+        //console.log(sauce.name, sauce.calories, sauce.cost );
     }
     if(document.querySelector('#sweetAndSourSauce').checked)
     {
@@ -158,23 +158,19 @@ window.onclick = function onclickFunction() {
         totalCoast += sauce.cost;
         totalCalories += sauce.calories;
         sauses.push(sauce.name);
-        console.log(sauce.name, sauce.calories, sauce.cost );
+    //console.log(sauce.name, sauce.calories, sauce.cost );
     }
-    console.log(totalCalories, totalCoast)
     // Price calculation including taxes (rounding to the nearest hundredth)
     if(totalCoast <= 10){
         finalyCoast = Math.round(totalCoast * 100 * 1.2) / 100;
     }
-    else if( 20 < totalCoast <= 18){
+    else if( 10 < totalCoast <= 18){
         finalyCoast = Math.round(totalCoast * 100 * 1.15) / 100;
     }
-    else if(totalCoast > 26){
+    else if(totalCoast > 18){
         finalyCoast = Math.round(totalCoast * 100 * 1.1) / 100;
     } 
-    console.log(totalCalories, finalyCoast)
-
     // data output to HTML
-   
     document.querySelector('#coastFinaly').innerHTML = finalyCoast + ' $';
     document.querySelector('#coastCalories').innerHTML = totalCalories;
 
@@ -182,6 +178,7 @@ window.onclick = function onclickFunction() {
 }
 /**
  * generates a pizza order and sends data to the server in json format
+ * (the server address specified in the method is used as a test one)
  */
 function makePizza(){
     if(!base){
@@ -205,14 +202,12 @@ function makePizza(){
               body: JSON.stringify(pizzaArray)
             }).then(result => result.json())
             .then(result => {
-                alert('Your order is accepted')
+                alert('Order is accepted')
             })
             .catch(error => {
                 console.log(`Error: ${error.message}`)
                 alert(`Error: ${error.message}`)
             })
-          })();
-          
-    }
-    
+          })(); 
+    }    
 }

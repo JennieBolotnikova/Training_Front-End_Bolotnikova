@@ -26,20 +26,27 @@ class Pizza{
      */
     get sauces(){return this.sauces}
 
+    /**Sets the value
+     * @param {Base} value 
+     */
     set base(value){
         if (value === '' || value === undefined){
             throw new Error('Incorrect base for pizza')
         }
         this.base = value
     }
-
+    /**Sets the value
+     * @param {Ingredient} value 
+     */
     set ingredients(value){
         if (value === '' || value === undefined){
             throw new Error('Incorrect ingredient for pizza')
         }
         this.ingredients.push(value)
     }
-
+    /**Sets the value
+     * @param {Sauce}value 
+     */
     set sauces(value){
         if (value === '' || value === undefined){
             throw new Error('Incorrect sauce for pizza')

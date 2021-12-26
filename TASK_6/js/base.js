@@ -13,34 +13,45 @@ class Base{
         this.cost = cost;
         this.calories = calories;
     }
-    /**
-     * @param {String} name - name of the selected base
+    /**Return name of the selected base
+     * @param {String} name - name 
      */
     get name(){return this.name}
-    /**
-     *  @param {Number} cost - count of the selected base
+    /**Return count of the selected base
+     *  @param {Number} cost - count 
      */
     get cost(){return this.cost}
-    /**
-     * @param {Number} calories -the number of calories of the selected base
+    /**Return the number of calories of the selected base
+     * @param {Number} calories -the number of calories
      */
     get calories(){return this.calories}
-    
+
+
+    /**
+     * Sets the value
+     * @param {String} value - name of the base
+     */
     set name(value){
         if (value === '' || value === undefined){
-            throw  new Error('Incorrect name base pizza')
+            throw  new Error('Incorrect base name')
         }
         this.name = value
     }
+    /**Sets the value
+     *  @param {Number} value - count of the base
+     */
     set cost(value){
         if (value === '' || value === undefined){
-            throw new Error('Incorrect cost base pizza')
+            throw new Error('Incorrect base cost')
         }
         this.cost = value
     }
+     /**Sets the value
+     * @param {Number}  value - the number of calories
+     */
     set calories(value){
         if (value === '' || value === undefined){
-            throw new Error('Incorrect calories base pizza')
+            throw new Error('Incorrect base calories')
         }
         this.calories = value
     }
