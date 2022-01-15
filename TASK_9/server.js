@@ -16,7 +16,7 @@ app.get("/api/students", function(req, res){
 // getting one student by id
 app.get("/api/students/:id", function(req, res){
        
-    const id = req.params.id; // получаем id
+    const id = req.params.id;
     const content = fs.readFileSync(filePath, "utf8");
     const students = JSON.parse(content);
     let student = null;
@@ -86,10 +86,10 @@ app.put("/api/students", jsonParser, function(req, res){
     if(!req.body) return res.sendStatus(400);
       
     const studentId = req.body.id;
-    const fistName= req.body.fistName;
-    const secondName = req.body.secondName;
-    const age= req.body.age;
-    const speciality = req.body.speciality;
+    const studentFistName= req.body.fistName;
+    const studentSecondName = req.body.secondName;
+    const studentAge= req.body.age;
+    const studentSpeciality = req.body.speciality;
       
     let data = fs.readFileSync(filePath, "utf8");
     const students = JSON.parse(data);
@@ -101,10 +101,10 @@ app.put("/api/students", jsonParser, function(req, res){
         }
     }
     if(student){
-        fistName= req.body.fistName;
-        secondName = req.body.secondName;
-        age= req.body.age;
-        speciality = req.body.speciality;
+        student.fistName= studentFistName;
+        student.secondName = studentSecondName;
+        student.age= studentAge;
+        student.speciality = studentSpeciality;
         data = JSON.stringify(students);
         fs.writeFileSync("students.json", data);
         res.send(student);

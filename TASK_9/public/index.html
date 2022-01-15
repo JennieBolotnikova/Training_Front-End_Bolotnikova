@@ -5,37 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+   
     <title>Students list</title>
 </head>
 <body>
-    <form name="studentForm">
+    <h2 style="margin-left: 100px;font-weight: bold;">Students</h2>
+    <form name="studentForm" style="margin-left: 100px;">
         <input type="hidden" name="id" value="0" />
         <div class="form-group">
-            <label for="name">Fist name:</label>
-            <input class="form-control" name="name" />
+            <label for="fistName">Fist name:</label>
+            <input class="form-control" name="fistName" style="width: 400px; "/>
         </div>
         <div class="form-group">
             <label for="secondName">Second name:</label>
-            <input class="form-control" name="secondName" />
+            <input class="form-control" name="secondName" style="width: 400px; " />
         </div>
         <div class="form-group">
             <label for="age">Age:</label>
-            <input class="form-control" name="age" />
+            <input class="form-control" name="age" style="width: 400px; " />
         </div>
         <div class="form-group">
             <label for="speciality">Speciality:</label>
-            <input class="form-control" name="speciality" />
+            <input class="form-control" name="speciality" style="width: 400px; " />
         </div>
         <div class="panel-body">
-            <button type="submit" class="btn btn-sm btn-primary">Save</button>
+            <button type="submit" class="btn btn-success btn-sm ">Save</button>
             <a id="reset" class="btn btn-sm btn-primary">Reset</a>
         </div>
     </form>
-    <table class="table table-condensed table-striped table-bordered">
+    <table class="table table-condensed table-striped table-bordered" style="margin-left: 100px; width: 800px;">
         <thead><tr><th>Id</th><th>Fist name</th><th>Second name</th><th>Age</th><th>Speciality</th><th></th></tr></thead>
         <tbody>
         </tbody>
-    </table>
-    <script src="\public\js\script.js"></script>
+    </table>   
+    <script src="js\script.js"></script>
+    <script src="js\student.js"></script>
 </body>
 </html>
