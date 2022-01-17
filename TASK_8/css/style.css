@@ -1,0 +1,79 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin-left: 60px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.data{
+    margin: 15px 0 15px 60px;
+  
+}
+
+.log, .create_event{
+    margin: 15px 0 15px 80px;
+}
+label{
+    font-size: 28px;
+}
+.data_container{
+    width: 650px;
+    height: 210px;
+    border: 2px solid black;
+    overflow-x: auto;
+}
+
+.add_data{
+    width: 650px;
+    height: 480px;
+    border: 2px solid #000000;
+    font-size: 24px;
+    padding: 10px 0 10px 40px;
+}
+
+.add-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: #09040a;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+}
+input{
+    height: 30px;
+    width: 250px;
+    margin: 8px 0 8px 0;
+}
+
+input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+select{
+    height: 30px;
+    width: 80px;
+    margin: 10px 0 10px 0;
+    font-size: 18px;
+}

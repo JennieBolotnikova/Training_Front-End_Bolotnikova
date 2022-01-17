@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <title>TODO-LIST</title>
+</head>
+<body>
+    <h1>TODO-LIST</h1>
+    <div class="content">
+        <div>
+            <div class="data">
+                <label>File1</label>
+                <div class="data_container" id="container_1">
+
+                </div>
+            </div>
+            <div class="data">
+                <label>File2</label>
+                <div class="data_container" id="container_2">
+
+                </div>
+            </div>
+            <div class="data">
+                <label>File3</label>
+                <div class="data_container" id="container_3">
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="log">
+                <label>AJAX request statuses</label>
+                <div class="data_container" id="log">
+
+                </div>
+            </div>
+            <div class="create_event">
+                <label>Create event</label>
+                <div class="add_data">
+                    <div class="add-content content">
+                        <div class="data-event add">
+                            <div>
+                                Data event:
+                            </div>
+                            <div>
+                                <input type="date" id="add-date-event">
+                            </div>
+                        </div>
+                        <div class="time-event add">
+                            <div>
+                                Time event:
+                            </div>
+                            <div>
+                                <input type="time" id="add-time-event">
+                            </div>
+                        </div>
+                        <div class="name-event add">
+                            <div>
+                                Name event:
+                            </div>
+                            <div>
+                                <input type="text" id="add-name-event">
+                            </div>
+                        </div>
+                        <div class="degree-importance add">
+                            <div>
+                                Degree Importance:
+                            </div>
+                            <div>
+                                <input type="text" id="add-degreeImportance-event">
+                            </div>
+                        </div>
+                        <div class="nodes add">
+                            <div>
+                                Nodes:
+                            </div>
+                            <div>
+                                <input type="text" id="add-nodes-event">
+                            </div>
+                        </div>
+                        <div class="btn-add add">
+                           
+                            <div class="select-file">
+                                <select name="" id="file-name-add">
+                                    <option value="jennie_data1.json">Files1</option>
+                                    <option value="jennie_data2.json">Files2</option>
+                                    <option value="jennie_data3.json">Files3</option>
+                                </select>
+                            </div>
+                            <div class="btn" id="add-event-btn">
+                                Add
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/Event.js"></script>
+</body>
+</html>
